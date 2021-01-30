@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-function App() {
+//import common component
+import Sidebar from './components/common/Sidebar';
+import Header from './components/common/Header';
+
+//import component 
+import HomePage from './components/homepage/HomePage';
+import ContactPage from './components/contact/ContactPage';
+
+
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+        <div className="main-wrapper">
+            <Header/>
+            <Sidebar/>
+            <Switch>
+                <Route exact path="/" component={HomePage}></Route>
+                <Route exact path="/contact" component={ContactPage}></Route>
+            </Switch>
+            {/* <div className={"container__loading-spinner" + (loading ? ' show' : '')}>
+                <div id="loader_div"></div>
+            </div> */}
+        </div>
+    </Router>
   );
 }
 
