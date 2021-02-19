@@ -27,8 +27,7 @@ const Header = () => {
   `;
 
   const Div1 = styled.div`
-    border-bottom: 2px solid #808080;
-    background-color: #f53f2d;
+    background-color: #2F4F4F;
     padding: 0 15rem;
     position: fixed;
     top: 0;
@@ -74,7 +73,7 @@ const Header = () => {
   `;
 
   const SearchZoneButton = styled.button`
-    background-color: #f53f2d;
+    background-color: #2F4F4F;
     border-style: none;
     border-radius: 4px;
     font-size: 16px;
@@ -83,17 +82,11 @@ const Header = () => {
     width: 10%;
     cursor: pointer;
     outline: none;
-
-    &:hover {
-      opacity: 0.5;
-    }
   `;
 
   const Button = styled.button`
   `;
   //end style area
-
-  const icon = <FontAwesomeIcon icon={faFacebook} />
 
   return(
     <React.Fragment>
@@ -136,8 +129,8 @@ const Header = () => {
           </div>
           <div style={{width:"60%",}}>
             <SearchZone>
-              <SearchZoneInput/>
-              <SearchZoneButton>
+              <SearchZoneInput/> 
+              <SearchZoneButton className="default__button">
                 <FontAwesomeIcon icon={faSearch} />
               </SearchZoneButton>
             </SearchZone>
