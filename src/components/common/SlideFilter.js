@@ -1,14 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { MDBSelect } from 'mdbreact';
 import { MDBIcon} from 'mdbreact';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'mdbreact/dist/css/mdb.css';
 
 const SlideFilter = () => {
 
-  state = {
+  const state = {
     options: [
       {
         text: "Option 1",
@@ -27,11 +26,12 @@ const SlideFilter = () => {
   return (
     <div>
       <div>
-        <MDBSelect
-          options={this.state.options}
-          selected="Choose your option"
-          label="Example label"
-        />
+        <select name="cars" id="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option>
+        </select>
       </div>
     </div>
   )

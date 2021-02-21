@@ -8,6 +8,7 @@ import 'mdbreact/dist/css/mdb.css';
 
 //import another components
 import SlideItemDetail from './SlideItemDetail';
+import SlideFilter from './SlideFilter';
 
 const SimpleSlider = () => {
 
@@ -88,6 +89,7 @@ const SimpleSlider = () => {
 
   return (
     <SlideZone>
+      <SlideFilter/>
       <NextArrow/>
       <PrevArrow/>
       <Slider {...settings} ref={slider}>
