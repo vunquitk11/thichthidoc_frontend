@@ -89,29 +89,25 @@ const SimpleSlider = () => {
 
   return (
     <SlideZone>
-      <SlideFilter/>
+      {/* <SlideFilter/> */}
+      <SlideItemDetail/>
       <NextArrow/>
       <PrevArrow/>
       <Slider {...settings} ref={slider}>
         <div style={{position:"relative",}}>
           <ImageSlideItem src="https://velocityglobal.com/wp-content/uploads/2019/03/Blog-Images-What-Does-the-Vietnam-Startup-Scene-Look-like-in-2019.jpg" />
-          <SlideItemDetail/>
         </div>
         <div style={{position:"relative",}}>
           <ImageSlideItem src="https://velocityglobal.com/wp-content/uploads/2019/03/Blog-Images-What-Does-the-Vietnam-Startup-Scene-Look-like-in-2019.jpg" />
-          <SlideItemDetail/>
         </div>
         <div style={{position:"relative",}}>
           <ImageSlideItem src="https://velocityglobal.com/wp-content/uploads/2019/03/Blog-Images-What-Does-the-Vietnam-Startup-Scene-Look-like-in-2019.jpg" />
-          <SlideItemDetail/>
         </div>
         <div style={{position:"relative",}}>
           <ImageSlideItem src="https://velocityglobal.com/wp-content/uploads/2019/03/Blog-Images-What-Does-the-Vietnam-Startup-Scene-Look-like-in-2019.jpg" />
-          <SlideItemDetail/>
         </div>
         <div style={{position:"relative",}}>
           <ImageSlideItem src="https://velocityglobal.com/wp-content/uploads/2019/03/Blog-Images-What-Does-the-Vietnam-Startup-Scene-Look-like-in-2019.jpg" />
-          <SlideItemDetail/>
         </div>
       </Slider>
     </SlideZone>

@@ -19,7 +19,7 @@ const DivCoverIcon = styled.div`
 const DivSlideItemDetail = styled.div`
   position: absolute;
   z-index: 100;
-  bottom: 9px;
+  bottom: 50px;
   left: 5px;
   height: 50px;
   width: 220px;

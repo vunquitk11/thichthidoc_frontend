@@ -26,7 +26,7 @@ const Header = () => {
     border-radius: 50%;
   `;
 
-  const Div1 = styled.div`
+  const DivCover = styled.div`
     background-color: #2F4F4F;
     padding: 0 15rem;
     position: fixed;
@@ -37,7 +37,7 @@ const Header = () => {
     z-index: 100;
   `;
 
-  const Div2 = styled.div`
+  const DivCover1 = styled.div`
     display: flex;
     justify-content: space-between;
     padding: 1rem 0;
@@ -90,8 +90,8 @@ const Header = () => {
 
   return(
     <React.Fragment>
-      <Div1>
-        <Div2>
+      <DivCover>
+        <DivCover1>
           <div style={{display:"flex",}}>
             <div className="header_option">Kênh người tạo nội dung</div>
             <div className="header_option">Tải ứng dụng</div>
@@ -122,7 +122,7 @@ const Header = () => {
             <div className="header_option">Đăng kí</div>
             <div className="header_option" style={{borderRight: "none",}}>Đăng nhập</div>
           </div>
-        </Div2>
+        </DivCover1>
         <div id="header_search_zone">
           <div style={{width:"20%",}}>
             <Image src={logoIcon}/>
@@ -137,7 +137,7 @@ const Header = () => {
           </div>
           <div></div>
         </div>
-      </Div1>
+      </DivCover>
     </React.Fragment>
   );
 }

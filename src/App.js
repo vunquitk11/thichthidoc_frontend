@@ -8,6 +8,7 @@ import Header from './components/common/Header';
 //import component 
 import HomePage from './components/homepage/HomePage';
 import ContactPage from './components/contact/ContactPage';
+import PostPage from './components/post/PostPage';
 
 
 
@@ -21,6 +22,7 @@ const App = () => {
             <Switch>
                 <Route exact path="/" component={HomePage}></Route>
                 <Route exact path="/contact" component={ContactPage}></Route>
+                <Route exact path="/post" component={PostPage}></Route>
             </Switch>
             {/* <div className={"container__loading-spinner" + (loading ? ' show' : '')}>
                 <div id="loader_div"></div>
